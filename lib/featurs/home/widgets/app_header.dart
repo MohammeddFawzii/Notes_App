@@ -24,20 +24,21 @@ class AppHeader extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: 18, right: 20),
           child: IconButton(
-              onPressed: () {},
-              icon: Container(
-                decoration: BoxDecoration(
-                    color: Colors.grey.withOpacity(0.1),
-                    borderRadius: BorderRadius.circular(10)),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Icon(
-                    icon,
-                    size: 34,
-                    color: Colors.grey.withOpacity(0.8),
-                  ),
+            onPressed: () {},
+            icon: Container(
+              decoration: BoxDecoration(
+                  color: Colors.grey.withOpacity(0.1),
+                  borderRadius: BorderRadius.circular(10)),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Icon(
+                  icon,
+                  size: 34,
+                  color: Colors.grey.withOpacity(0.8),
                 ),
-              )),
+              ),
+            ),
+          ),
         )
       ],
     );
