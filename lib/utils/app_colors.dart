@@ -6,5 +6,5 @@ abstract class AppColors {
   static const Color colorsPiker1stColor = Colors.deepPurple;
   static const Color colorsPiker2ndColor = Colors.blueGrey;
   static const Color colorsPiker3rdcolor = Colors.deepOrange;
-  static const Color colorsPiker1stcolor = Colors.blueAccent;
+  static const Color colorsPiker4thcolor = Colors.blueAccent;
 }

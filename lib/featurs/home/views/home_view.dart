@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:notes/featurs/home/widgets/home_view_body.dart';
 import 'package:notes/utils/app_colors.dart';
 
+import '../widgets/bottom_sheet_body.dart';
+
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
   static const id = 'home view';
@@ -13,7 +15,16 @@ class HomeView extends StatelessWidget {
         floatingActionButton: FloatingActionButton(
           backgroundColor: AppColors.buttonsColor,
           shape: const CircleBorder(),
-          onPressed: () {},
+          onPressed: () {
+            showModalBottomSheet(
+              backgroundColor: AppColors.mainBgColor,
+              isScrollControlled: true,
+              context: context,
+              builder: (context) {
+                return const BottomSheetBody();
+              },
+            );
+          },
           child: const Icon(
             Icons.add,
             color: AppColors.mainBgColor,
